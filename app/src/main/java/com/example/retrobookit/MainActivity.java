@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        loginButton=findViewById(R.id.loginButton);
+        loginButton=findViewById(R.id.loginButtonMain);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        signUpButton=findViewById(R.id.signUpButton);
+        signUpButton=findViewById(R.id.signUpButtonMain);
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
