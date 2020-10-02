@@ -9,7 +9,9 @@ import android.widget.Button;
 
 import com.example.retrobookit.controller.CreateAccountActivity;
 import com.example.retrobookit.controller.LoginActivity;
-
+/*This app made by Sameer Ahmad
+* Github- sahmad737
+* */
 public class MainActivity extends AppCompatActivity {
     private Button loginButton;
     private Button signUpButton;
