@@ -15,9 +15,8 @@ import com.example.retrobookit.model.Book;
 public class BookListAdapter extends RecyclerView.Adapter<BookListAdapter.ViewHolder> {
 
     private BookData bookData=new BookData();
-    public BookListAdapter(){
+    private OnItemClickListener itemClickListener;
 
-    }
 
     @NonNull
     @Override
@@ -43,7 +42,14 @@ public class BookListAdapter extends RecyclerView.Adapter<BookListAdapter.ViewHo
         return bookData.bookList().size() ;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    //Set up own clickListener
+    public void setOnClickListener(OnItemClickListener itemClickListener){
+        this.itemClickListener=itemClickListener;
+    }
+
+
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+
         //Finding text view of list row
         private ImageView bookListImageView;
         private TextView bookListNameView;
@@ -54,10 +60,23 @@ public class BookListAdapter extends RecyclerView.Adapter<BookListAdapter.ViewHo
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
+            //Registering itemView with onclcik
+            itemView.setOnClickListener(this);
+
             bookListImageView=itemView.findViewById(R.id.bookListImage);
             bookListNameView=itemView.findViewById(R.id.bookNameList);
             bookListAuthorView=itemView.findViewById(R.id.bookAuthorList);
             bookListPriceView=itemView.findViewById(R.id.bookPriceList);
         }
+
+        @Override
+        public void onClick(View v) {
+            itemClickListener.onItemClick(v,getAdapterPosition());
+        }
+    }
+
+    //To simplify things make an interface
+    public interface OnItemClickListener{
+        void onItemClick(View view,int position);
     }
 }
