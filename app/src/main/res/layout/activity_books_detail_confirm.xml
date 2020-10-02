@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controller.BooksDetailConfirmActivity">
+
+    <ImageView
+        android:id="@+id/imageBookDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:src="@drawable/book"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/bookNameDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Name"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="2dp"
+            />
+
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/authorBookDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:text="Author Name" />
+        <TextView
+            android:textColor="#000"
+            android:layout_marginTop="8dp"
+            android:id="@+id/priceBookDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:text="Price:Rs 100" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/descriptionBookDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:text="@string/lorem_ipsum"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        android:layout_margin="8dp"
+        android:background="@color/colorAccent"
+        android:text="Proceed"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:letterSpacing=".4"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>

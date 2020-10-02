@@ -3,4 +3,5 @@
     <string name="loginHint">Username</string>
     <string name="passwordHint">Password</string>
     <string name="login_title_button">Login</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit orci, euismod eget sem et, hendrerit consectetur nibh. Mauris nulla lacus, ultrices id accumsan ut, commodo ac purus. Suspendisse et sem vitae eros malesuada mollis. Integer euismod placerat sem at finibus. Aliquam efficitur justo erat. Quisque pulvinar convallis tortor, nec lobortis orci rhoncus ultrices. Nam tempus porttitor convallis. Aenean consequat justo nibh, ut condimentum tortor viverra eget. Quisque tristique nec arcu in commodo. </string>
 </resources>
