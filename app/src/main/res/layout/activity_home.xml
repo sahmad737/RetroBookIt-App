@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context=".controller.HomeActivity">
+
+    <Button
+        android:id="@+id/buyButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="8dp"
+        android:text="Buy"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:letterSpacing=".5"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/sellButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="8dp"
+        android:text="Sell"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:letterSpacing=".5"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:text="Orders"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:letterSpacing=".5"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>
