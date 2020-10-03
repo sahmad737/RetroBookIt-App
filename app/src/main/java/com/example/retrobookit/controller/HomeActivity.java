@@ -11,16 +11,25 @@ import com.example.retrobookit.R;
 
 public class HomeActivity extends AppCompatActivity {
     private Button buyButton;
+    private Button sellButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
         buyButton=findViewById(R.id.buyButton);
+        sellButton=findViewById(R.id.sellButton);
         buyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this,BookListActivity.class));
+            }
+        });
+
+        sellButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this,UploadBookActivity.class));
             }
         });
     }
